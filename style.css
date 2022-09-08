@@ -1,0 +1,253 @@
+:root {
+    --cards: #1E2338;
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --white: #fff;
+    --divider: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-background);
+}
+
+/* CONTAINER */
+
+.container {
+    margin: 0 auto;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    height: 56.25rem;
+    background: linear-gradient(180deg, var(--blue) 50%, var(--page-background) 50%);
+}
+
+/* TITLE */
+
+.title {
+    padding-top: 6.25rem;
+    padding-bottom: 4.0625rem;
+
+    text-align: center;
+    width: 34.5625rem;
+}
+
+.title h1 {
+    color: var(--page-background);
+    font: 700 3rem "Open Sans", sans-serif;
+    padding-bottom: 1.25rem;
+}
+
+.title p {
+    color: var(--page-background);
+    font: 400 1.125rem "Open Sans", sans-serif;
+}
+
+
+
+/* PLANS */
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+/* CARDS */
+
+.card-plans {
+    width: 22.1875rem;
+    height: 29.375rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    background-color: var(--page-background);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px var(--gray);
+}
+
+.card-commun-plans {
+    width: 22.1875rem;
+    height: 30.625rem;
+    background-color: var(--page-background);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px var(--gray);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* CARDS */
+
+.card-body {
+    flex: 1;
+}
+
+.card-commun-header {
+    justify-content: space-between;
+    background-color: var(--yellow);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding-bottom: 1.375rem;
+    padding-top: 1.375rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-plans h2 { 
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--cards);
+    padding-bottom: 1.25rem;
+}
+
+.card-plans h2 { 
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--cards);
+    padding-bottom: 1.25rem;
+}
+
+.card-commun-plans h2 { 
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--blue);
+}
+
+.card-container {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+/* HEADER */
+
+.card-header {
+    padding-top: 1.875rem;
+}
+
+.card-commun-header .commun {
+    font: 600 0.75rem "Open Sans", sans-serif;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    border: none;
+    background-color: var(--blue);
+    height: 2rem;
+    width: 5.875rem;
+    border-radius: 1rem;
+}
+
+/* PRICE */
+
+.card-price {
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+}
+
+.card-price span:nth-child(1) {
+    font: 700 2.25rem "Open Sans", sans-serif;
+    color: var(--cards);
+}
+
+.card-price span:nth-child(2) {
+    font: 700 1.125rem "Open Sans", sans-serif;
+    color: var(--cards)
+}
+
+.card-price span:nth-child(3) {
+    font: 400 1.125rem "Open Sans", sans-serif;
+    color: var(--gray);
+}
+
+/* DESCRIPTION */
+
+.card-description {
+    padding-bottom: 1.25rem;
+    font: 400 0.875rem "Open Sans", sans-serif;
+    color: var(--gray);
+}
+
+/* DIVIDER */
+
+.divider {
+    background: var(--divider);
+    width: 100%;
+    height: 2px;
+}
+
+/* INCLUSES */
+
+.card-incluses {
+    padding-top: 1.25rem;   
+}
+
+.card-incluses p {
+    font: 600 0.875rem "Open Sans", sans-serif;
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+.card-incluses img {
+    padding-right: 1rem;
+}
+
+/* FOOTER */
+
+.card-footer button {
+    background-color: transparent;
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    width: 18.5rem;
+    height: 3.0625rem;
+    border-radius: .625rem;
+    margin-bottom: 1.875rem;
+}
+
+.card-footer button:hover {
+    background-color: var(--blue);
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: 0.2s;
+}
+
+.card-commun-footer button {
+    background-color: var(--blue);
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--white);
+    border: none;
+    width: 18.5rem;
+    height: 3.0625rem;
+    border-radius: .625rem;
+    margin-bottom: 2.6875rem;
+}
+
+.card-commun-footer button:hover {
+    background-color: transparent;
+    font: 600 1.125rem "Open Sans", sans-serif;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    transition: .2s;
+}
+
+.card-commun-footer button {
+    cursor: pointer;
+}
+
+.card-footer button {
+    cursor: pointer;
+}
